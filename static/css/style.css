@@ -1,0 +1,17 @@
+.custom-form input{
+    
+}
+
+
+.helptext{
+    color: limegreen;
+}
+
+
+.bg-light-custom{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card{
+    border-radius: 10px;
+}
