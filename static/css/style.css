@@ -1,3 +1,4 @@
+
 .custom-form input{
     
 }
@@ -14,4 +15,12 @@
 
 .card{
     border-radius: 10px;
+}
+
+.login-page{
+    background-image: url("../images/before-you-file-a-complaint.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
 }
