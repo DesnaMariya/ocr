@@ -1,6 +1,10 @@
 
 .custom-form input{
-    
+
+}
+.custom-form label{
+margin-bottom: 10px;
+letter-spacing: 1px;
 }
 
 
@@ -23,4 +27,68 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: content-box;
+}
+
+
+
+section.container-fluid,
+section.container{
+    margin-top: 56px;
+    min-height: calc(100vh - 56px);
+    
+}
+
+section.container-fluid > .row{
+    height: calc(100vh - 56px);
+}
+
+.carousel-inner img{
+    height: calc(100vh - 56px);;
+    width: auto;
+}
+
+.bg-about{
+    background-color: rgba(76, 193, 247, 0.404);
+}
+
+/* sidebar */
+.sidebar{
+    background-color: #666666;
+    height: 100%;
+    width: 250px;
+}
+
+.sidebar--title{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.sidebar--nav{
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar--nav > li{
+    padding: 10px 0;
+    margin-bottom: 5px;
+    padding-inline: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.sidebar--nav > li.active{
+    background-color: #333333;
+
+}
+
+.sidebar--nav > li:hover{
+    background-color: #33333373;
+
+}
+
+.sidebar--nav > li > a {
+text-decoration: none;
+color: white;
+letter-spacing: 1px;
 }

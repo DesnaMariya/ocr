@@ -1,0 +1,105 @@
+{% extends 'userprofile/profile.html' %} {% block profile_update %}
+
+<h1>Update Profile</h1>
+<div class="container">
+  <div class="row align-items-center justify-content-center">
+    <div class="col">
+      <form method="post">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Field</th>
+              <td>Value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th><label>Full Name</label></th>
+              <td><input type="text" value="Desna Mariya" /></td>
+            </tr>
+
+            <tr>
+              <th><label>Age</label></th>
+              <td><input type="text" value="23" /></td>
+            </tr>
+
+            <tr>
+              <th><label>Date of Birth</label></th>
+              <td><input type="text" value="25-11-1998" /></td>
+            </tr>
+
+            <tr>
+              <th><label>Gender</label></th>
+              <td>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Male</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Female</label
+                  >
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <th><label>Address</label></th>
+              <td>
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Edakkalathur(H),Chiramanangad"
+                    id="floatingTextarea2"
+                    style="height: 100px"
+                  ></textarea>
+                  <label for="floatingTextarea2">Edakkalathur(H),Chiramanangad</label>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <th><label>Pincode</label></th>
+              <td><input type="text" value="680604"/></td>
+            </tr>
+
+            <tr>
+              <th><label>Ward No</label></th>
+              <td><input type="text" value="18" /></td>
+            </tr>
+
+            <tr>
+              <th><label>AadharCard No</label></th>
+              <td><input type="text" value="2222 2222 2222"/></td>
+            </tr>
+        
+
+            
+          </tbody>
+        </table>
+        <a href="{% url 'profile' %}" class="btn btn-primary">submit</a>
+        
+        
+      </form>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
+

@@ -1,18 +1,12 @@
 {% extends 'index.html' %}
 
 {% block registration %}
-<div class="container-fluid bg-light-custom login-page">
-    <div class="row">
-        <div class="col">
-            <!-- login page -->
-            {% block login_page %}{% endblock %}
+ <!-- login page -->
+ {% block login_page %}{% endblock %}
 
-            <!-- register page -->
-            {% block register_page %}{% endblock %}
+ <!-- register page -->
+ {% block register_page %}{% endblock %}
 
-        </div>
-    </div>
-</div>
 
 
 {% endblock %}

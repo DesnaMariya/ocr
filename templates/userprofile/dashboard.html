@@ -1,0 +1,31 @@
+{% extends 'userprofile/userprofile.html' %} 
+
+{% load static %}
+
+{% block dashboard_page %} 
+
+<section class="container-fluid">
+    <div class="row justify-content-between">
+        <div class="col-auto p-0">
+            <div class="sidebar">
+                <p class="sidebar--title">Menu</p>
+                <ul class="sidebar--nav">
+                    <li class="active"><a href="{% url 'profile' %}">Profile</a></li>
+                    <li><a href="{% url 'complaint_registration' %}">Complaint Registration</a></li>
+                    <li><a href="{% url 'complaint_status' %}">Complaint Status</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="col">
+           <main class="h-100 w-100">
+            {% block profile_section %}{% endblock %}
+            {% block complaint_registration_section %}{% endblock %}
+            {% block complaint_status_section %}{% endblock %}
+            
+           </main>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

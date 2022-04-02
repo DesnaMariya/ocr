@@ -1,0 +1,105 @@
+{% extends 'userprofile/dashboard.html' %} 
+
+{% block complaint_registration_section %}
+
+<h1 style="color: rgb(231, 9, 9);">Complaint Registration section</h1>
+<div class="container">
+  <div class="row align-items-center justify-content-center">
+    <div class="col">
+      <form method="post">
+        <table class="table table-hover">
+          <thead>
+            <br/>
+            
+          </thead>
+          <tbody>
+            <tr>
+              <th><label for="complaint">Complaint Category</label></th>
+              <td>
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected></option>
+                    <option value="1">Street pipe</option>
+                    <option value="2">Street light</option>
+                    <option value="3">Road reconstruction</option>
+                    <option value="4">Garbage system</option>
+                    <option value="5">Rain water drainage</option>
+                    <option value="6">others</option>
+
+                  </select>
+                  <label for="floatingSelect">select the category</label>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <th><label>Complaint location</label></th>
+              <td><div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2"></label>
+              </div></td>
+            </tr>
+
+            <tr>
+              <th><label>Complaint details</label></th>
+              <td><div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2"></label>
+              </div></td>
+            </tr>
+
+            <!--<tr>
+              <th><label>Gender</label></th>
+              <td>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Male</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Female</label
+                  >
+                </div>
+              </td>
+            </tr>-->
+
+            <tr>
+              <th><label>Ward No</label></th>
+              <td><input type="text" /></td>
+            </tr>
+
+            
+            <tr>
+              <th><label>Images</label></th>
+              <td>
+                <div class="mb-3">
+                  <label for="formFile" class="form-label">Upload image</label>
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,28 +1,29 @@
-{% extends 'registration/registration.html' %}
-{% load static %}
+{% extends 'registration/registration.html' %} {% load static %}
 
 <!-- login page -->
 {% block login_page %}
 
-<div class="container " >
-    <div class="row min-vh-100 align-items-center">
-        <div class="col-lg-8"> 
-            <!-- <img class="img-fluid" src="{% static 'images/before-you-file-a-complaint.jpg' %}" alt=""> -->
+<section class="container-fluid bg-about">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-lg-4">
+      <h1>Login</h1>
+      <p style="font-style:italic ">
+        Welcome to the <b>online complaint registration portal</b><br/>
+        login with your username and password.
+      </p>
+      <div class="card shadow custom-card">
+        <div class="card-body">
+          <form action="" method="post" class="custom-form">
+            {% csrf_token %} {{form.as_p}}
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
         </div>
-        <div class="col-lg-4">
-            <div class="card custom-card">
-                <div class="card-body">
-                    <p>Login</p>
-                    <form action="" method="post" class="custom-form">
-                        {% csrf_token %}
-                        {{form.as_p}}
-                        <button type="submit" class="btn btn-primary">Login</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-</div>
-
+    <div class="col-lg-6">
+      <!-- <img class="img-fluid" src="{% static 'images/before-you-file-a-complaint.jpg' %}" alt=""> -->
+    </div>
+  </div>
+</section>
 
 {% endblock %}
